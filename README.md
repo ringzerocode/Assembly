@@ -1,6 +1,5 @@
 # Assembly-Toolkit
-A toolkit for assembling, disassembling and debugging assembly files
-
+Utility for assembling, disassembling and debugging assembly files
 
 
 ------------------
