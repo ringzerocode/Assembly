@@ -5,9 +5,9 @@
 2) Assembler.sh Bash script to automate process of assembling and debugging an assembly script. 
 
 
-------------------
+
 MANUAL ASSEMBLING:
-------------------
+
 
 Instructions to assemble code and generate an executable file (Linux enviroment) :
 
@@ -19,9 +19,9 @@ then link it using ld, it will generate the actual executable: ld -o fibonacci f
 
 
 
-------------
+
 ASSEMBLER.SH
-------------
+
 
 Bash script that automate the process of compiling, linking and running assembly script
 
@@ -31,9 +31,9 @@ usage:
 
 
 
---------------------------------------------
+
 DISASSEMBLING MANUAL COMMAND - OBJDUMP TOOL:
---------------------------------------------
+
 
 It will disassemble an executable into assembly instructions. It will allow you to study the corresponding assembly instructions of an executable file. 
 
@@ -49,9 +49,8 @@ objdump -sj .data helloWorld
 
 
 
--------------
 GNU DEBUGGER:
--------------
+
 
 Gnu debugger is an utility integrated in linux, used with gef extensions it allows you to debug executable applications in terminal.
 
@@ -66,11 +65,12 @@ gdb -q ./helloWorld
 
 
 
---------------------
-ASSEMBLER.SH + GDB:
---------------------
 
-NOW YOU CAN USE BASH SCRIPT TO ASSEMBLE AND DEBUG AN EXECUTABLE.
+ASSEMBLER.SH + GDB:
+
+
+NOW YOU CAN USE BASH SCRIPT TO ASSEMBLE AND DEBUG AN EXECUTABLE:
+
 ./assembler.sh helloWorld.s -g
 
 
