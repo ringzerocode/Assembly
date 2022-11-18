@@ -1,11 +1,12 @@
 # Assembly-Toolkit
-A toolkit for assembling, disassembly and debugging assembly files
+A toolkit for assembling, disassembling and debugging assembly files
 
 
 
 ------------------
 MANUAL ASSEMBLING:
 ------------------
+
 Instructions to assemble code and generate an executable file (Linux enviroment) :
 
 An assembly script usually has the (.s extension)
@@ -15,9 +16,11 @@ use nasm to convert it to machine code (.o extension): nasm -f elf64 fibonacci.s
 then link it using ld, it will generate the actual executable: ld -o fibonacci ficonacci.o
 
 
+
 ------------
 ASSEMBLER.SH
 ------------
+
 Bash script that automate the process of compiling, linking and running assembly script
 
 usage:
@@ -25,9 +28,11 @@ usage:
 ./assembler.sh filename.s
 
 
+
 --------------------------------------------
 DISASSEMBLING MANUAL COMMAND - OBJDUMP TOOL:
 --------------------------------------------
+
 It will disassemble an executable into assembly instructions. It will allow you to study the corresponding assembly instructions of an executable file. 
 
 objdump -M intel -d filename
@@ -45,14 +50,13 @@ objdump -sj .data helloWorld
 -------------
 GNU DEBUGGER:
 -------------
-Gnu debugger is an utility integrated in linux, used with gef extensions it allows you to debug executable applications in terminal.
 
+Gnu debugger is an utility integrated in linux, used with gef extensions it allows you to debug executable applications in terminal.
 
 INSTALL GEF (LINUX GNU HACKER PLUGIN)
 
 wget -O ~/.gdbinit-gef.py -q https://gef.blah.cat/py
 echo source ~/.gdbinit-gef.py >> ~/.gdbinit
-
 
 USAGE: IT WILL DISASSEMBLE AND DEBUG AN EXECUTABLE
 
@@ -61,11 +65,16 @@ gdb -q ./helloWorld
 
 
 --------------------
-ASSEMBLER-SH + GDB:
+ASSEMBLER.SH + GDB:
 --------------------
 
-USE BASH SCRIPT TO ASSEMBLING AND DEBUG A 
+NOW YOU CAN USE BASH SCRIPT TO ASSEMBLE AND DEBUG AN EXECUTABLE.
 ./assembler.sh helloWorld.s -g
+
+
+
+OUTPUT: 
+
 
 
 
