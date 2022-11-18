@@ -1,5 +1,8 @@
-# x86-64 Assembly-Toolkit
-Utility for assembling, disassembling and debugging assembly files
+# x86-64 Assembly
+
+1) Cheatsheet utility for assembling, disassembling and debugging assembly files from terminal.
+
+2) Assembler.sh Bash script to automate process of assembling and debugging an assembly script. 
 
 
 ------------------
