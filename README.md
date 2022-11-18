@@ -4,10 +4,6 @@
 
 2) Assembler.sh Bash script to automate process of assembling and debugging a file. 
 
-![image](https://user-images.githubusercontent.com/118491337/202597717-2277d022-e3dd-4473-9fe1-aae28ea0e8ed.png)
-
-
-
 
 
 ------------------
